@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Blog Post</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">MyPortfolio</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-blue-500 font-medium">Home</a>
+        <a href="projects.html" class="hover:text-blue-500 font-medium">Projects</a>
+        <a href="blog.html" class="text-blue-600 dark:text-blue-400 font-semibold">Blog</a>
+        <a href="contact.html" class="hover:text-blue-500 font-medium">Contact</a>
+      </nav>
+      <!-- Theme Toggle -->
+      <button id="themeToggle" class="ml-4 p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Blog Post Section -->
+  <section class="container mx-auto py-16 px-6 max-w-3xl">
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
+      <img src="assets/blog1.jpg" alt="Blog Cover" class="w-full h-64 object-cover rounded-md mb-6">
+      <h1 class="text-4xl font-bold mb-4">Getting Started with TailwindCSS</h1>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Published on March 10, 2025 • 5 min read</p>
+      
+      <div class="prose dark:prose-invert max-w-none">
+        <p>
+          TailwindCSS is a utility-first CSS framework that allows developers to build modern, responsive UIs quickly. Instead of writing custom CSS for every component, you apply predefined utility classes directly to your HTML elements.
+        </p>
+        <h2>Why TailwindCSS?</h2>
+        <p>
+          With Tailwind, you can move fast without sacrificing design flexibility. It helps eliminate unused CSS, improves maintainability, and gives you full control over responsive designs.
+        </p>
+        <h2>Quick Setup</h2>
+        <ol>
+          <li>Include Tailwind via CDN in your project.</li>
+          <li>Start applying utility classes like <code>p-4</code>, <code>text-center</code>, <code>bg-blue-500</code>.</li>
+          <li>Experiment with responsive breakpoints like <code>md:</code>, <code>lg:</code>.</li>
+        </ol>
+        <p>
+          That’s it! You’re ready to start building sleek and responsive layouts with ease.
+        </p>
+      </div>
+    </article>
+
+    <!-- Back to Blog -->
+    <div class="mt-8 text-center">
+      <a href="blog.html" class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition">
+        ← Back to Blog
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800 text-center py-6 shadow-inner">
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- FontAwesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Projects</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">MyPortfolio</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-blue-500 font-medium">Home</a>
+        <a href="projects.html" class="text-blue-600 dark:text-blue-400 font-semibold">Projects</a>
+        <a href="blog.html" class="hover:text-blue-500 font-medium">Blog</a>
+        <a href="contact.html" class="hover:text-blue-500 font-medium">Contact</a>
+      </nav>
+      <!-- Theme Toggle -->
+      <button id="themeToggle" class="ml-4 p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="container mx-auto py-16 px-6">
+    <h1 class="text-4xl font-bold text-center mb-12">My Projects</h1>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition overflow-hidden">
+        <img src="assets/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A full-featured online store with cart, checkout, and payment integration.
+          </p>
+          <a href="#" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition overflow-hidden">
+        <img src="assets/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A sleek personal portfolio showcasing skills, projects, and blog posts.
+          </p>
+          <a href="#" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition overflow-hidden">
+        <img src="assets/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Business Landing Page</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A conversion-focused landing page for a startup with lead capture.
+          </p>
+          <a href="#" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition overflow-hidden">
+        <img src="assets/project4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Blog Platform</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A custom CMS with markdown support, categories, and commenting system.
+          </p>
+          <a href="#" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">View Project →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800 text-center py-6 shadow-inner">
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- FontAwesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
