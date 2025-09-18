@@ -1,12 +1,12 @@
-// Theme toggle button
+// ===== THEME TOGGLE =====
 const themeToggle = document.getElementById("themeToggle");
 
-// Load saved theme from localStorage
+// Load saved theme
 if (localStorage.getItem("theme") === "dark") {
   document.documentElement.classList.add("dark");
 }
 
-// Toggle theme on button click
+// If button exists
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
@@ -15,25 +15,19 @@ if (themeToggle) {
     themeToggle.textContent = isDark ? "☀️" : "🌙";
   });
 
-  // Set correct icon on load
-  if (document.documentElement.classList.contains("dark")) {
-    themeToggle.textContent = "☀️";
-  } else {
-    themeToggle.textContent = "🌙";
-  }
+  // Set icon on load
+  themeToggle.textContent = document.documentElement.classList.contains("dark") ? "☀️" : "🌙";
 }
 
-// Highlight active nav link
+// ===== ACTIVE NAV LINK =====
 document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll("nav a");
 
   navLinks.forEach(link => {
     const linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
+    if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
       link.classList.add("text-blue-600", "dark:text-blue-400", "font-semibold");
-    } else {
-      link.classList.remove("text-blue-600", "dark:text-blue-400", "font-semibold");
     }
   });
 });

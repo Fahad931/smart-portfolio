@@ -4,8 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio | Home</title>
+
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Enable class-based dark mode
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <!-- Script -->
   <script defer src="script.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
@@ -29,9 +38,15 @@
 
   <!-- Hero Section -->
   <section class="container mx-auto text-center py-20 px-6">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-600 dark:text-blue-400">Your Name</span></h1>
-    <p class="text-lg md:text-xl mb-6">A passionate Web Developer helping businesses go online 🚀</p>
-    <a href="projects.html" class="bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700">View My Work</a>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Hi, I'm <span class="text-blue-600 dark:text-blue-400">Your Name</span>
+    </h1>
+    <p class="text-lg md:text-xl mb-6">
+      A passionate Web Developer helping businesses go online 🚀
+    </p>
+    <a href="projects.html" class="bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700">
+      View My Work
+    </a>
   </section>
 
   <!-- About Section -->
@@ -72,7 +87,9 @@
   <!-- Call to Action -->
   <section class="container mx-auto text-center py-16 px-6">
     <h2 class="text-3xl font-bold mb-6">Ready to work together?</h2>
-    <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700">Hire Me</a>
+    <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700">
+      Hire Me
+    </a>
   </section>
 
   <!-- Footer -->
